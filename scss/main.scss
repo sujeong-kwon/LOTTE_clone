@@ -1,0 +1,178 @@
+// 메인 페이지
+.mainbanner{
+  height: 550px;
+  background: url('../img/main_banner_2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner{
+  &:nth-child(1){
+    margin-top: 50px;
+  }
+  .box{
+    &.items_2{
+      margin-top: 70px;
+      .items{
+          margin-top: 70px;
+        p + a{
+          margin-top: 50px;
+        }
+      }
+      .culture_title{
+        position: relative;
+        width: 268px;
+        height: 145px;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        background: url('../img/move_tit_culture.jpg') 0% 0% no-repeat;
+        background-size: 100%;
+        z-index: -11;
+      }
+      .gallery_title{
+        position: relative;
+        width: 387px;
+        height: 123px;
+        top: 0;
+        background: url('../img/move_tit_gallery.jpg') 0% 0% no-repeat;
+        background-size: 100%;
+        z-index: -11;
+      }
+      .txt01{
+        position: relative;
+        width: 100%;
+        font-size: 20px;
+        line-height: 20px;
+        color: #9c9c9c;
+        padding-top: 42px;
+        padding-left: 0;
+        font-weight: 300;
+      }
+      .txt02{
+        position: relative;
+        width: 100%;
+        font-size: 34px;
+        line-height: 34px;
+        padding-top: 30px;
+        padding-left: 0;
+        color: #252525;
+        font-weight: 500;
+      }
+      .txt03{
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+        line-height: 26px;
+        color: #9c9c9c;
+        padding-top: 16px;
+        padding-left: 0;
+        letter-spacing: -1.2px;
+        font-weight: 300;
+      }
+      .right{
+        float: right;
+        width: 50%;
+        min-height: 625px;
+        height: auto;
+        padding-left: 194px;
+        padding-top: 30px;
+        .sns_title{
+          // position: relative;
+          width: 354px;
+          height: 143px;
+          top: 0;
+          background: url('../img/move_tit_sns.png') no-repeat;
+          background-size: 100%;
+          z-index: -11;
+        }
+      }
+    }
+  }
+}
+
+.main_mvg{
+  top: 0;
+  position: relative;
+  width: 100%;
+  height: 570px;
+  margin: 50px auto 100px auto;
+  .inner{
+    position: relative;
+    display: block;
+    width: 1180px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .mvg_title{
+      position: relative;
+      display: block;
+      width: 88px;
+      height: 34px;
+      background: url('../img/move_tit_mvg.png') top center no-repeat;
+      background-size: 100% auto;
+    }
+    .mvg_img{
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding-top: 20px;
+    }
+    .txt02{
+      position: relative;
+      font-size: 34px;
+      line-height: 40px;
+      padding-top: 12px;
+      color: #252525;
+      font-weight: 500;
+    }
+    .txt03{
+      position: relative;
+      font-size: 18px;
+      line-height: 18px;
+      color: #9c9c9c;
+      padding-top: 22px;
+      padding-left: 3px;
+      letter-spacing: -1.2px;
+      font-weight: 300;
+    }
+    .gbtn{
+      position: absolute;
+      width: 124px;
+      height: 30px;
+      top: 102px;
+      left: 89.6%;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 13px;
+      color: #959595;
+      &:hover{
+        color: white;
+        background: $gbtnColor;
+      }
+    }
+  }
+}
+
+.main_sns{
+  .right{
+    padding-top: 50px !important;
+    .btn-list-wrap{
+      width: 100%;
+      height: auto;
+      padding: 72px 0 0 0;
+      ul{
+        li{
+          position: relative;
+          display: inline-block;
+          width: 72px;
+          height: 87px;
+          padding: 0;
+          margin-right: 26px;
+        }
+      }
+    }
+  }
+}

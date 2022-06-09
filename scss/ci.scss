@@ -1,0 +1,135 @@
+body.subpage.ci{
+  .container{
+    .content{
+      .inner+.inner{
+        border-top: none;
+      }
+      .breadcrumb{
+        display: block;
+        position: relative;
+        width: 700px;
+        margin-left: 0;
+        padding: 40px 20px 14px 20px;
+        border-bottom: 1px solid #000;
+        z-index: 3;
+        .tit{
+          display: inline-block;
+          font-size: 27px;
+          color: #000;
+          line-height: 40px;
+          font-weight: 700;
+        }
+      }
+      .box_top{
+        display: block;
+        position: relative;
+        width: 1240px;
+        height: 700px;
+        margin: 0 auto;
+        padding-top: 78px;
+        p{
+          display: block;
+          position: relative;
+          img{
+            vertical-align: middle;
+          }
+        }
+        .txt{
+          margin-top: 48px;
+          font-size: 18px;
+          color: #666;
+          line-height: 30px;
+        }
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+          position: absolute;
+          top: -30px;
+          left: 550px;
+          width: 800px;
+          height: 800px;
+          z-index: 1;
+          background: url('../img/ci/bg_03.png') no-repeat 50% 0;
+          background-size: contain;
+        }
+      }
+      .section{
+        .line_tit{
+          display: block;
+          position: relative;
+          margin-top: 129px;
+          padding-left: 12px;
+          font-size: 42px;
+          color: #000;
+          line-height: 62px;
+          font-weight: 700;
+          &:before{
+            content: '';
+            display: block;
+            clear: both;
+            position: absolute;
+            top: 30px;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: #000;
+          }
+          & + .txt02{
+            margin-top: 54px;
+          }
+          & + .box_graphic{
+            margin-top: 54px;
+          }
+        }
+        .line_tit.first{
+          margin-top: 0;
+        }
+        .txt02{
+          display: block;
+          position: relative;
+          font-size: 27px;
+          color: #000;
+          line-height: 40px;
+          font-weight: 700;
+        }
+        .ci_mark{
+          display: block;
+          margin-top: 27px;
+          img{
+            vertical-align: middle;
+          }
+          & + .txt01{
+            margin-top: 15px;
+          }
+        }
+        .txt01{
+          display: block;
+          position: relative;
+          font-size: 18px;
+          color: #000;
+          line-height: 30px;
+        }
+        .box_graphic{
+          display: block;
+          position: relative;
+          font-size: 0;
+          .item{
+            display: inline-block;
+            vertical-align: top;
+            &:last-child{
+              margin-left: 60px;
+            }
+            .img_box{
+              margin-top: 15px;
+            }
+          }
+          & + .txt01{
+            margin-top: 34px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// common ui
+// general button
+.gbtn{
+  // display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 13px;
+  padding: 5px 36px;
+  // height: 50px;
+  // line-height: 50px;
+  text-align: center;
+  color: #656565;
+  border: 1px solid $gbtnColor;
+  top: 60px;
+  &:hover{
+    color: white;
+    background: $gbtnColor;
+  }
+}

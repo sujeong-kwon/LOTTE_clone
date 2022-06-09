@@ -1,0 +1,107 @@
+// component
+.box{
+  display: flex;
+  .items{
+    box-sizing: border-box;
+    padding: 50px;
+    flex: 100%;
+    flex-shrink: 0;
+    font-size: $fontSizeMid;
+    .title{
+      font-size: $titleFontSizeMiddle;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &.items_2{
+    .items{
+      flex: 50%;
+    }
+  }
+}
+
+// community table
+table{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  & + .gbtn{
+    margin-top: 20px;
+    &.right{
+      float: right;
+    }
+  }
+}
+
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: $fontSizeNormal;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+}
+
+td{
+  // padding: 15px;
+  padding: 26px 5px 29px;
+  height: 30px;
+  text-align: left;
+  vertical-align: middle; /* 테이블 내에서 상하 정렬 default : top */
+  font-size: $fontSizeNormal;
+  font-weight: 400;
+  color: $fontColorBasic;
+  border-bottom: 1px solid $borderColorPrimary;
+}
+
+.tbl-header{
+  // background-color: $tableBg;
+  border-top: 3px solid #000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tbl-content{
+  margin-top: 0;
+}
+
+// accordion
+.accordion{
+  dl{
+    margin: 50px auto;
+    dt{
+      font-size: 18px;
+      font-weight: 400;
+      // text-indent: 3em;
+      color: #000;
+      line-height: 24px;
+      background: $tableBg;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 26px 64px 29px;
+      &:first-child{
+        border-top: 3px solid #000;
+      }
+    }
+    dd{
+      height: 200px;
+      background: #f1f1f1;
+      line-height: 25px;
+      p{
+        // text-indent: 3em;
+        // line-height: 30px;
+        padding: 29px 64px 29px 64px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// kakao map
+.map-info-window{
+  width: 150px;
+  text-align: center;
+  padding: 6px 0;
+}

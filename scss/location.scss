@@ -1,0 +1,115 @@
+body.subpage.location{
+  .container{
+    .content{
+      .inner{
+        display: block;
+        position: relative;
+        margin: 50px 0 auto;
+        width: 1180px;
+        p:first-child{
+          position: relative;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          font-size: 19px;
+          font-weight: 600;
+          color: #000;
+        }
+        .tab_wrap_all{
+          width: 100%;
+          text-align: center;
+          .tab_wrap02_2{
+            width: 260px !important;
+            margin: 45px auto;
+            li{
+              float: left;
+              vertical-align: middle;
+              &:first-child{
+                &::after{
+                  content: '|';
+                  position: relative;
+                  left: 28%;
+                  top: -4px;
+                  font-size: 14px;
+                  color: #9c9c9c;
+                  line-height: 24px;
+                  font-weight: 600;
+                }
+              }
+              & + li{
+                margin-left: 46px;
+              }
+            }
+            &::after{
+              content: '';
+              display: block;
+              clear: both;
+            }
+          }
+          #map{
+            position: relative;
+            width: 50%;
+            height: auto;
+            float: left;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .tab-content{
+            .inner{
+              display: block;
+              position: relative;
+              width: 1180px;
+              margin: 0 auto;
+              .map_tab{
+                position: relative;
+                width: 50%;
+                max-width: 590px;
+                float: right;
+                padding: 0 50px;
+                .tabintab{
+                  clear: both;
+                  position: relative;
+                  display: block;
+                  width: auto;
+                  margin: 0 auto;
+                  li{
+                    float: left;
+                    img{
+                      position: relative;
+                      margin: 0;
+                      padding: 0;
+                    }
+                    & + li{
+                      margin-left: 10px;
+                    }
+                  }
+                }
+                .tab-content01{
+                  clear: both;
+                  position: relative;
+                  display: block;
+                  text-align: left;
+                  padding-top: 16px;
+                  .list_dot01{
+                    list-style: none;
+                    li{
+                      position: relative;
+                      margin-top: 6px;
+                      padding-left: 12px;
+                      font-size: 15px;
+                      line-height: 20px;
+                      color: #666;
+                      font-weight: 500;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
